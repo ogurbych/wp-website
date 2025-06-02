@@ -14,11 +14,11 @@ jobs:
       - name: Deploy via SFTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.FTP_Host }}
-          username: ${{ secrets.FTP_Username }}
-          password: ${{ secrets.FTP_Password }}
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           protocol: sftp
-          port: ${{ secrets.FTP_Port }}
+          port: ${{ secrets.FTP_PORT }} # expected to be 221
           local-dir: ./
           server-dir: ./
           exclude: |
