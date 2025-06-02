@@ -17,7 +17,7 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp
+          protocol: ftp
           port: ${{ secrets.FTP_PORT }} # expected to be 221
           local-dir: ./
           server-dir: ./
