@@ -12,3 +12,110 @@ Text Domain: starter-theme
 
 body { margin: 0; }
 
+/* Header styles */
+.site-header {
+    background: #f4f4f4;
+}
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.site-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.site-navigation .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.site-navigation .menu li {
+    margin-left: 1rem;
+}
+@media (max-width: 600px) {
+    .site-navigation .menu {
+        flex-direction: column;
+    }
+    .site-navigation .menu li {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Hero banner */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #eee;
+}
+
+/* Offer cards */
+.offers {
+    padding: 2rem 1rem;
+}
+.offer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.offer-card {
+    flex: 1 1 calc(25% - 1rem);
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+@media (max-width: 800px) {
+    .offer-card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+@media (max-width: 500px) {
+    .offer-card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Gallery slider */
+.animal-gallery {
+    padding: 2rem 1rem;
+}
+.animal-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contact form */
+.contact-us {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+/* Footer */
+.site-footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 1rem;
+}
+.site-footer .social a {
+    margin: 0 0.5rem;
+}
+
