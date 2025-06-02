@@ -139,12 +139,24 @@ section {
     background: #FFF9F4;
 }
 .animal-gallery img {
-    width: 100%;
-    height: auto;
     display: block;
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    max-height: 400px;
 }
 .animal-gallery .swiper {
     position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+}
+@media (max-width: 600px) {
+    .animal-gallery img {
+        max-width: 300px;
+        max-height: 200px;
+    }
 }
 .swiper-button-prev,
 .swiper-button-next {

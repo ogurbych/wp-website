@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typeof Swiper !== 'undefined') {
         new Swiper('.animal-gallery .swiper', {
             loop: true,
+            slidesPerView: 1,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true
