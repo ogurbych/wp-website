@@ -1,0 +1,30 @@
+name: Deploy Theme
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy via SFTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_Host }}
+          username: ${{ secrets.FTP_Username }}
+          password: ${{ secrets.FTP_Password }}
+          protocol: sftp
+          port: ${{ secrets.FTP_Port }}
+          local-dir: ./
+          server-dir: ./
+          exclude: |
+            .git/**
+            .github/**
+            README.md
+            .gitignore
+
+
