@@ -12,6 +12,7 @@ add_action( 'after_setup_theme', 'starter_theme_setup' );
 
 function starter_theme_scripts() {
     wp_enqueue_style( 'starter-theme-style', get_stylesheet_uri() );
+    wp_enqueue_script( 'starter-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0', true );
 
     // Only load Swiper on the front page template.
     if ( is_page_template( 'templates/front-page.php' ) ) {

@@ -2,6 +2,8 @@
 
 This repository contains a minimal starter theme for WordPress.
 
+Gallery images for the front page slider should be placed in `assets/images/`.
+
 ## Setup locally
 
 1. Clone this repository into the `wp-content/themes` directory of your local WordPress installation.

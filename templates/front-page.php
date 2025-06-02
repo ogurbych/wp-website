@@ -36,9 +36,9 @@ get_header();
         <h2>Meet Our Animals</h2>
         <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="https://via.placeholder.com/600x400?text=Animal+1" alt="Animal 1"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/600x400?text=Animal+2" alt="Animal 2"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/600x400?text=Animal+3" alt="Animal 3"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-slider-1.png" alt="Animal 1"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-slider-2.png" alt="Animal 2"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-slider-3.png" alt="Animal 3"></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -48,15 +48,7 @@ get_header();
 
     <section class="contact-us">
         <h2>Contact Us</h2>
-        <form class="contact-form">
-            <label for="contact-name">Name</label>
-            <input id="contact-name" name="contact-name" type="text" required>
-            <label for="contact-email">Email</label>
-            <input id="contact-email" name="contact-email" type="email" required>
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" name="contact-message" rows="4" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <?php echo do_shortcode( '[contact-form-7 id="1" title="Contact form"]' ); ?>
         <div class="contact-info">
             <p>123 Shelter Lane, Petville</p>
             <p>Phone: (555) 123-4567</p>
