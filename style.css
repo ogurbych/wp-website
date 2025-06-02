@@ -61,8 +61,15 @@ section {
     margin-left: 1rem;
 }
 @media (max-width: 600px) {
+    .header-inner {
+        justify-content: flex-start;
+    }
     .menu-toggle {
         display: block;
+        margin-left: auto;
+    }
+    .site-navigation .menu a {
+        color: #000;
     }
     .site-navigation {
         position: relative;
