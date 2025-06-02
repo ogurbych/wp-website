@@ -9,6 +9,7 @@
 <header class="site-header">
     <div class="header-inner">
         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
         <nav class="site-navigation" aria-label="Primary Menu">
             <?php
             wp_nav_menu( array(

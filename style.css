@@ -10,11 +10,23 @@ License URI: https://opensource.org/licenses/MIT
 Text Domain: starter-theme
 */
 
-body { margin: 0; }
+body {
+    margin: 0;
+    background: #FFF9F4;
+    color: #383838;
+    font-family: sans-serif;
+}
+a {
+    color: #FB8500;
+}
 
-/* Header styles */
+section {
+    margin-bottom: 2rem;
+}
+
 .site-header {
-    background: #f4f4f4;
+    background: #FB8500;
+    color: #FFF9F4;
 }
 .header-inner {
     max-width: 1200px;
@@ -28,6 +40,13 @@ body { margin: 0; }
     margin: 0;
     font-size: 1.5rem;
 }
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #FFF9F4;
+    font-size: 2rem;
+}
 .site-navigation .menu {
     list-style: none;
     margin: 0;
@@ -38,8 +57,25 @@ body { margin: 0; }
     margin-left: 1rem;
 }
 @media (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+    }
+    .site-navigation {
+        position: relative;
+    }
     .site-navigation .menu {
+        display: none;
         flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #FFF9F4;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .site-navigation.open .menu {
+        display: flex;
     }
     .site-navigation .menu li {
         margin: 0.5rem 0;
@@ -50,12 +86,14 @@ body { margin: 0; }
 .hero {
     text-align: center;
     padding: 4rem 1rem;
-    background: #eee;
+    background: #FFF9F4;
+    border-radius: 8px;
 }
 
 /* Offer cards */
 .offers {
     padding: 2rem 1rem;
+    border-radius: 8px;
 }
 .offer-cards {
     display: flex;
@@ -70,6 +108,7 @@ body { margin: 0; }
     border: 1px solid #ddd;
     padding: 1rem;
     text-align: center;
+    border-radius: 8px;
 }
 @media (max-width: 800px) {
     .offer-card {
@@ -85,11 +124,28 @@ body { margin: 0; }
 /* Gallery slider */
 .animal-gallery {
     padding: 2rem 1rem;
+    border-radius: 8px;
+    background: #FFF9F4;
 }
 .animal-gallery img {
     width: 100%;
     height: auto;
     display: block;
+}
+.animal-gallery .swiper {
+    position: relative;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: #FB8500;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.swiper-button-prev { left: 10px; }
+.swiper-button-next { right: 10px; }
+.swiper-pagination-bullet-active {
+    background: #FB8500;
 }
 
 /* Contact form */
@@ -97,6 +153,8 @@ body { margin: 0; }
     padding: 2rem 1rem;
     max-width: 800px;
     margin: 0 auto;
+    background: #FFF9F4;
+    border-radius: 8px;
 }
 .contact-form {
     display: flex;
@@ -108,10 +166,19 @@ body { margin: 0; }
     padding: 0.5rem;
     width: 100%;
 }
+.contact-form button {
+    background: #FB8500;
+    color: #FFF9F4;
+    border: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
 
 /* Footer */
 .site-footer {
-    background: #f4f4f4;
+    background: #FB8500;
+    color: #FFF9F4;
     text-align: center;
     padding: 1rem;
 }
