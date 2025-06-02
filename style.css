@@ -28,6 +28,10 @@ section {
     background: #FB8500;
     color: #FFF9F4;
 }
+.site-header a,
+.site-footer a {
+    color: #FFF;
+}
 .header-inner {
     max-width: 1200px;
     margin: 0 auto;
