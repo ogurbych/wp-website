@@ -23,5 +23,16 @@ window.addEventListener('DOMContentLoaded', function () {
             menu.classList.toggle('toggled');
             this.classList.toggle('active');
         });
+
+        // Close the menu after a navigation link is clicked
+        var links = menu.querySelectorAll('a');
+        links.forEach(function (link) {
+            link.addEventListener('click', function () {
+                if (menu.classList.contains('toggled')) {
+                    menu.classList.remove('toggled');
+                    toggle.classList.remove('active');
+                }
+            });
+        });
     }
 });
