@@ -17,6 +17,7 @@ body {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,6 +49,36 @@ body > section {
     margin-bottom: 4rem;
 }
 
+/* Buttons */
+.btn,
+.contact-form button,
+.offerings .card button {
+    border: none;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.btn-primary {
+    background: #ff6b6b;
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #ff4c4c;
+}
+
+.btn-secondary {
+    background: #3498db;
+    color: #fff;
+}
+.btn-secondary:hover {
+    background: #258cd1;
+}
+
 body > section:nth-of-type(even) {
     background-color: #fafafa;
 }
@@ -59,6 +90,26 @@ body > section:nth-of-type(even) {
     align-items: center;
     padding: 1rem;
     background: #f5f5f5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.site-branding {
+    display: flex;
+    align-items: center;
+}
+.site-branding .logo {
+    font-size: 1.5rem;
+    background: #ff6b6b;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
 }
 .site-title {
     margin: 0;
@@ -74,6 +125,14 @@ body > section:nth-of-type(even) {
 .primary-menu li {
     margin-left: 1rem;
 }
+.primary-menu a {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+.primary-menu .label {
+    display: inline;
+}
 .menu-toggle {
     display: none;
     background: none;
@@ -84,30 +143,32 @@ body > section:nth-of-type(even) {
 .menu-toggle .dashicons {
     vertical-align: middle;
 }
+.menu-toggle.active .dashicons:before {
+    content: "\f158"; /* dashicons-no-alt */
+}
 @media (max-width: 600px) {
-    .site-header {
-        position: relative;
-    }
     .primary-menu {
-        display: none;
+        display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #f5f5f5;
-        border-top: 1px solid #ddd;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        padding: 0.5rem 0;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        inset: 0;
+        background: rgba(245,245,245,0.95);
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
     }
     .primary-menu.toggled {
-        display: flex;
+        transform: translateY(0);
     }
     .primary-menu li {
-        margin: 0.5rem 1rem;
+        margin: 1rem 0;
     }
     .menu-toggle {
         display: block;
+    }
+    .primary-menu .label {
+        display: none;
     }
 }
 
@@ -145,6 +206,13 @@ body > section:nth-of-type(even) {
     border: 1px solid #ddd;
     padding: 1rem;
     flex: 1 1 200px;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.offerings .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* Gallery Slider */
@@ -185,6 +253,14 @@ body > section:nth-of-type(even) {
     margin-bottom: 4rem;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
+.contact-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
 .contact-inner {
     display: flex;
     flex-wrap: wrap;
@@ -209,7 +285,6 @@ body > section:nth-of-type(even) {
 }
 .contact-form button {
     margin-top: 1rem;
-    padding: 0.5rem;
 }
 .contact-info {
     flex: 1 1 300px;
@@ -223,6 +298,20 @@ body > section:nth-of-type(even) {
 }
 .contact-info .dashicons {
     font-size: 1.2rem;
+}
+.contact-map {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .contact-inner {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
 
 /* Footer */

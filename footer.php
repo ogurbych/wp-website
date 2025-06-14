@@ -1,9 +1,9 @@
 <footer class="site-footer">
     <nav class="footer-nav">
         <ul class="footer-menu">
-            <li><a href="<?php echo esc_url( home_url( '/about-us' ) ); ?>">About Us</a></li>
+            <li><a href="#offerings">About Us</a></li>
             <li><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">Blog</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>">Contact Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
     <ul class="social-links">
