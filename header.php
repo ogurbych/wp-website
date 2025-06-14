@@ -8,7 +8,7 @@
 <body <?php body_class(); ?>>
 <header class="site-header">
     <div class="site-branding">
-        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Our Shelter</a></h1>
     </div>
     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
         <span class="dashicons dashicons-menu"></span>

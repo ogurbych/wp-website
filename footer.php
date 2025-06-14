@@ -1,5 +1,4 @@
 <footer class="site-footer">
-    <p>Copywright &copy; <?php echo date('Y'); ?> Starter Theme</p>
     <nav class="footer-nav">
         <ul class="footer-menu">
             <li><a href="<?php echo esc_url( home_url( '/about-us' ) ); ?>">About Us</a></li>
@@ -12,6 +11,7 @@
         <li><a href="#"><span class="dashicons dashicons-twitter"></span><span class="screen-reader-text">Twitter</span></a></li>
         <li><a href="#"><span class="dashicons dashicons-instagram"></span><span class="screen-reader-text">Instagram</span></a></li>
     </ul>
+    <p>Copywright &copy; <?php echo date('Y'); ?> Starter Theme</p>
 </footer>
 <?php wp_footer(); ?>
 </body>
