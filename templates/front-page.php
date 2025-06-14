@@ -52,6 +52,7 @@ get_header();
 
 <section class="contact-section">
     <h2>Contact Us</h2>
+    <div class="contact-inner">
     <form class="contact-form">
         <label for="contact-name">Name</label>
         <input type="text" id="contact-name" name="name" required>
@@ -65,9 +66,10 @@ get_header();
         <button type="submit">Send Message</button>
     </form>
     <div class="contact-info">
-        <p>123 Shelter Ave, Cityville</p>
-        <p>Email: info@example.com</p>
-        <p>Phone: (555) 555-5555</p>
+        <p><span class="dashicons dashicons-location"></span>123 Shelter Ave, Cityville</p>
+        <p><span class="dashicons dashicons-email"></span>info@example.com</p>
+        <p><span class="dashicons dashicons-phone"></span>(555) 555-5555</p>
+    </div>
     </div>
 </section>
 
