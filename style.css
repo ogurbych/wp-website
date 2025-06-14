@@ -13,6 +13,27 @@ Text Domain: starter-theme
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 /* Header and Navigation */
@@ -26,6 +47,7 @@ body {
 .site-title {
     margin: 0;
     font-size: 1.5rem;
+    font-weight: 600;
 }
 .primary-menu {
     list-style: none;
@@ -80,7 +102,7 @@ body {
     padding: 3rem 1rem;
     margin-bottom: 2rem;
 }
-.hero-banner h2 {
+.hero-banner h1 {
     margin-top: 0;
 }
 
