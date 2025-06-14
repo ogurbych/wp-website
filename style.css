@@ -412,3 +412,35 @@ body > section:nth-of-type(even) {
     margin: 0 1rem 1rem;
     align-self: flex-start;
 }
+
+/* Single Post */
+.single-hero {
+    margin-bottom: 0;
+}
+
+.single-post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.single-post .featured-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.single-post .share-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
