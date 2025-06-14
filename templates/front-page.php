@@ -14,24 +14,28 @@ get_header();
     </div>
 </section>
 
-<section class="offerings">
+<section id="offerings" class="offerings">
     <h2>What We Offer</h2>
     <div class="cards">
         <article class="card">
             <h3>Adoption</h3>
             <p>Find your new best friend today.</p>
+            <button class="btn btn-primary"><span class="dashicons dashicons-pets"></span>Adopt Now</button>
         </article>
         <article class="card">
             <h3>Volunteer</h3>
             <p>Join us and make a difference.</p>
+            <button class="btn btn-secondary"><span class="dashicons dashicons-groups"></span>Join Us</button>
         </article>
         <article class="card">
             <h3>Donate</h3>
             <p>Your support saves lives.</p>
+            <button class="btn btn-primary"><span class="dashicons dashicons-heart"></span>Donate</button>
         </article>
         <article class="card">
             <h3>Foster</h3>
             <p>Provide a temporary home for animals in need.</p>
+            <button class="btn btn-secondary"><span class="dashicons dashicons-admin-home"></span>Become Foster</button>
         </article>
     </div>
 </section>
@@ -50,26 +54,29 @@ get_header();
     </div>
 </section>
 
-<section class="contact-section">
+<section id="contact" class="contact-section">
     <h2>Contact Us</h2>
-    <div class="contact-inner">
-    <form class="contact-form">
-        <label for="contact-name">Name</label>
-        <input type="text" id="contact-name" name="name" required>
+    <div class="contact-card">
+        <div class="contact-inner">
+            <form class="contact-form">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" required>
 
-        <label for="contact-email">Email</label>
-        <input type="email" id="contact-email" name="email" required>
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" required>
 
-        <label for="contact-message">Message</label>
-        <textarea id="contact-message" name="message" rows="5" required></textarea>
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="5" required></textarea>
 
-        <button type="submit">Send Message</button>
-    </form>
-    <div class="contact-info">
-        <p><span class="dashicons dashicons-location"></span>123 Shelter Ave, Cityville</p>
-        <p><span class="dashicons dashicons-email"></span>info@example.com</p>
-        <p><span class="dashicons dashicons-phone"></span>(555) 555-5555</p>
-    </div>
+                <button type="submit" class="btn btn-primary"><span class="dashicons dashicons-email-alt2"></span>Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><span class="dashicons dashicons-location"></span>123 Shelter Ave, Cityville</p>
+                <p><span class="dashicons dashicons-email"></span>info@example.com</p>
+                <p><span class="dashicons dashicons-phone"></span>(555) 555-5555</p>
+            </div>
+        </div>
+        <iframe class="contact-map" src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
     </div>
 </section>
 

@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', function () {
     if (toggle && menu) {
         toggle.addEventListener('click', function () {
             menu.classList.toggle('toggled');
+            this.classList.toggle('active');
         });
     }
 });
