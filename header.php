@@ -10,7 +10,10 @@
     <div class="site-branding">
         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
     </div>
-    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+        <span class="dashicons dashicons-menu"></span>
+        <span class="screen-reader-text">Menu</span>
+    </button>
     <nav>
         <ul id="primary-menu" class="primary-menu">
             <li><a href="<?php echo esc_url( home_url( '/about-us' ) ); ?>">About Us</a></li>
