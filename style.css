@@ -161,7 +161,7 @@ body > section:nth-of-type(even) {
     height: auto;
     display: block;
     max-height: 400px;
-    object-fit: cover;
+    object-fit: contain;
 }
 .animal-gallery .swiper {
     max-width: 800px;
