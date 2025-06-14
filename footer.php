@@ -1,5 +1,12 @@
 <footer class="site-footer">
-    <p>&copy; <?php echo date('Y'); ?> Starter Theme</p>
+    <p>Copywright &copy; <?php echo date('Y'); ?> Starter Theme</p>
+    <nav class="footer-nav">
+        <ul class="footer-menu">
+            <li><a href="<?php echo esc_url( home_url( '/about-us' ) ); ?>">About Us</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">Blog</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>">Contact Us</a></li>
+        </ul>
+    </nav>
     <ul class="social-links">
         <li><a href="#"><span class="dashicons dashicons-facebook"></span><span class="screen-reader-text">Facebook</span></a></li>
         <li><a href="#"><span class="dashicons dashicons-twitter"></span><span class="screen-reader-text">Twitter</span></a></li>

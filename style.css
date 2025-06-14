@@ -201,3 +201,17 @@ body {
 .site-footer .social-links .dashicons {
     font-size: 1.5rem;
 }
+
+/* Footer Navigation */
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+}
