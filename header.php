@@ -11,12 +11,11 @@
         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
     </div>
     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
-    <?php
-        wp_nav_menu( array(
-            'theme_location' => 'primary',
-            'menu_id'        => 'primary-menu',
-            'menu_class'     => 'primary-menu',
-            'container'      => 'nav'
-        ) );
-    ?>
+    <nav>
+        <ul id="primary-menu" class="primary-menu">
+            <li><a href="<?php echo esc_url( home_url( '/about-us' ) ); ?>">About Us</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">Blog</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>">Contact Us</a></li>
+        </ul>
+    </nav>
 </header>
