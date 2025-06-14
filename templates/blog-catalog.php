@@ -28,7 +28,7 @@ get_header();
                 <article id="post-<?php the_ID(); ?>" <?php post_class('post-card'); ?>>
                     <?php if ( has_post_thumbnail() ) : ?>
                         <a href="<?php the_permalink(); ?>" class="post-thumbnail">
-                            <?php the_post_thumbnail('large'); ?>
+                            <?php the_post_thumbnail('medium_large'); ?>
                         </a>
                     <?php endif; ?>
                     <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
