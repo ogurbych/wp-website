@@ -2,7 +2,7 @@
     <nav class="footer-nav">
         <ul class="footer-menu">
             <li><a href="#offerings">About Us</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">Blog</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/blog-catalog' ) ); ?>">Blog Catalog</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
