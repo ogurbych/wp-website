@@ -40,9 +40,9 @@ get_header();
     <h2>Meet Our Animals</h2>
     <div class="swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="https://via.placeholder.com/600x400" alt="Animal 1"></div>
-            <div class="swiper-slide"><img src="https://via.placeholder.com/600x400" alt="Animal 2"></div>
-            <div class="swiper-slide"><img src="https://via.placeholder.com/600x400" alt="Animal 3"></div>
+            <div class="swiper-slide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assests/image-slider-1.png' ); ?>" alt="Animal 1"></div>
+            <div class="swiper-slide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assests/image-slider-2.png' ); ?>" alt="Animal 2"></div>
+            <div class="swiper-slide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assests/image-slider-3.png' ); ?>" alt="Animal 3"></div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
