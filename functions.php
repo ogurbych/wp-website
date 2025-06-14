@@ -25,3 +25,15 @@ function starter_theme_scripts() {
     wp_enqueue_script( 'starter-theme', get_template_directory_uri() . '/js/theme.js', array('swiper'), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'starter_theme_scripts' );
+
+/**
+ * Load single post template from the templates directory.
+ */
+function starter_theme_single_template( $template ) {
+    $custom_template = locate_template( 'templates/single.php' );
+    if ( $custom_template ) {
+        return $custom_template;
+    }
+    return $template;
+}
+add_filter( 'single_template', 'starter_theme_single_template' );
