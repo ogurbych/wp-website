@@ -36,6 +36,12 @@ h3 {
     font-size: 1.5rem;
 }
 
+section h1,
+section h2,
+section h3 {
+    text-align: center;
+}
+
 /* Header and Navigation */
 .site-header {
     display: flex;
