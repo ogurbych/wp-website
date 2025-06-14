@@ -18,7 +18,6 @@
     <nav>
         <ul id="primary-menu" class="primary-menu">
             <li><a href="#offerings"><span class="dashicons dashicons-info"></span><span class="label">About Us</span></a></li>
-            <li><a href="<?php echo esc_url( home_url( '/blog-catalog' ) ); ?>"><span class="dashicons dashicons-admin-post"></span><span class="label">Blog Catalog</span></a></li>
             <li><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>"><span class="dashicons dashicons-welcome-write-blog"></span><span class="label">Blog</span></a></li>
             <li><a href="#contact"><span class="dashicons dashicons-email"></span><span class="label">Contact Us</span></a></li>
         </ul>
