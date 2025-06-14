@@ -1,0 +1,16 @@
+/*
+Theme Name: Starter Theme
+Theme URI: https://example.com
+Author: Example Author
+Author URI: https://example.com
+Description: A basic starter theme.
+Version: 1.0
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+Text Domain: starter-theme
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
