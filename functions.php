@@ -9,6 +9,8 @@ function starter_theme_setup() {
 add_action( 'after_setup_theme', 'starter_theme_setup' );
 
 function starter_theme_scripts() {
+    // Google Fonts
+    wp_enqueue_style( 'starter-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap', array(), null );
     // Main stylesheet
     wp_enqueue_style( 'starter-style', get_stylesheet_uri() );
 

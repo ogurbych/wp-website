@@ -9,7 +9,7 @@ get_header();
 
 <section class="hero-banner">
     <div class="container">
-        <h2>Welcome to Our Animal Shelter</h2>
+        <h1>Welcome to Our Animal Shelter</h1>
         <p>We provide safe havens for animals and help them find loving homes.</p>
     </div>
 </section>
