@@ -14,3 +14,128 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Header and Navigation */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f5f5f5;
+}
+.site-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.primary-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.primary-menu li {
+    margin-left: 1rem;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    font-size: 1rem;
+}
+@media (max-width: 600px) {
+    .primary-menu {
+        display: none;
+        flex-direction: column;
+    }
+    .primary-menu.toggled {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: #e9f5ff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.hero-banner h2 {
+    margin-top: 0;
+}
+
+/* Offerings Cards */
+.offerings {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.offerings .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.offerings .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    flex: 1 1 200px;
+}
+
+/* Gallery Slider */
+.animal-gallery {
+    padding: 2rem 1rem;
+}
+.animal-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 2rem 1rem;
+    background: #f9f9f9;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto 1rem;
+}
+.contact-form label {
+    margin-top: 0.5rem;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+}
+.contact-form button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+.contact-info {
+    text-align: center;
+}
+
+/* Footer */
+.site-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+.site-footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.site-footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+}
