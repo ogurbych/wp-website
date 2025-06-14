@@ -15,8 +15,16 @@ get_header();
 
 <section class="blog-catalog">
     <div class="post-grid">
-        <?php if ( have_posts() ) : ?>
-            <?php while ( have_posts() ) : the_post(); ?>
+        <?php
+        $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+        $blog_query = new WP_Query( array(
+            'post_type' => 'post',
+            'paged'     => $paged,
+        ) );
+
+        if ( $blog_query->have_posts() ) :
+            while ( $blog_query->have_posts() ) :
+                $blog_query->the_post(); ?>
                 <article id="post-<?php the_ID(); ?>" <?php post_class('post-card'); ?>>
                     <?php if ( has_post_thumbnail() ) : ?>
                         <a href="<?php the_permalink(); ?>" class="post-thumbnail">
@@ -30,9 +38,10 @@ get_header();
                     <a href="<?php the_permalink(); ?>" class="btn btn-primary read-more">Read More</a>
                 </article>
             <?php endwhile; ?>
+            <?php the_posts_navigation(); ?>
         <?php else : ?>
             <p>No posts found.</p>
-        <?php endif; ?>
+        <?php endif; wp_reset_postdata(); ?>
     </div>
 </section>
 
